@@ -1,0 +1,110 @@
+body{
+    background-color: black;
+    /* background-image: url('images/bakground.jpg'); */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    position: sticky;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav ul{
+    display: flex; /* all items horizontal */
+    align-items: center;
+    list-style-type: none;
+    height: 60px;
+    background-color: black;
+}
+
+nav ul li{
+    padding: 0 12px;
+    color: rgb(233, 168, 84);
+    cursor: pointer;
+}
+
+.brand img{
+    width: 38px;
+    padding: 0 8px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+}
+
+.container{
+    min-height: 70vh;
+    background-color: black;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    /* background-image: url('bakground.jpg'); */
+}
+
+.songitem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    /* width: 100%; */
+    color: rgb(233, 168, 84);
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 40px;
+}
+
+.songitem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.timestamp img{
+    width: 45px;
+    margin: 0 30px;
+    cursor: pointer;
+}
+
+.bottom{
+    position: sticky;
+    height: 100px;
+    background-color: black;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#progressbar{
+    text-align: center;
+    width: 80vw;
+    cursor: pointer;
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+.songinfo{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    left: 10vw;
+}
+
+.songinfo img{
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+    margin-bottom: -7px;
+}
